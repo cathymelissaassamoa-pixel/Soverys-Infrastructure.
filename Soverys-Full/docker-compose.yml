@@ -1,0 +1,16 @@
+# Offre Soverys Ultime Souverainne => Cerveau Intelligent (Llamma/ Mistral), Automatisation (N8N) et Conteneur (Docker)
+
+version: '3.8'
+services:
+  ollama-server:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+  n8n-automation:
+    image: n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+  qdrant-db:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
